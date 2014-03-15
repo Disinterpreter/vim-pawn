@@ -6,7 +6,9 @@ Vim support for the [Pawn](http://www.compuphase.com/pawn/pawn.htm) programming 
 
 Clone into `~/.vim/bundle`.
 
-To use, add this to your .vimrc:
+# Compiling
+
+To invoke `pawncc` into a quickfix window, add this to your .vimrc:
 ```
 function! MakePawn()
   silent make | copen
