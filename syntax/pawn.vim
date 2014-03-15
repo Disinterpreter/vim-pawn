@@ -8,6 +8,9 @@ if exists("b:current_syntax")
   finish
 endif
 
+let s:cpo_save = &cpo
+set cpo&vim
+
 " A bunch of useful C keywords
 syn keyword	cStatement	goto break return continue assert state sleep exit
 syn keyword	cLabel		case default
@@ -1022,4 +1025,5 @@ hi def link cForward    	Function
 
 let b:current_syntax = "pawn"
 
-" vim: ts=8
+let &cpo = s:cpo_save
+unlet s:cpo_save
