@@ -178,9 +178,6 @@ syn keyword	cStorageClass	static const stock native forward public
 syn keyword 	cConstant 	cellbits cellmax cellmin charbits charmax charmin ucharmax __Pawn debug
 syn keyword 	cConstant 	true false
 
-" admin.inc
-syn keyword	cFunction	DumpAdminCache AddCommandOverride GetCommandOverride UnsetCommandOverride
-
 syn keyword     cFunction     CreateActor
 syn keyword     cFunction     DestroyActor
 syn keyword     cFunction     IsActorStreamedIn
@@ -204,10 +201,10 @@ syn keyword     cFunction     format
 syn keyword     cFunction     SetTimer
 syn keyword     cFunction     KillTimer
 syn keyword     cFunction     GetTickCount
-syn keyword     cFunction     Float:asin
-syn keyword     cFunction     Float:acos
-syn keyword     cFunction     Float:atan
-syn keyword     cFunction     Float:atan2
+syn keyword     cFunction     asin
+syn keyword     cFunction     acos
+syn keyword     cFunction     atan
+syn keyword     cFunction     atan2
 syn keyword     cFunction     SendChat
 syn keyword     cFunction     SendCommand
 syn keyword     cFunction     GetPlayerState
@@ -279,7 +276,7 @@ syn keyword     cFunction     GetPlayerPos
 syn keyword     cFunction     SetPlayerFacingAngle
 syn keyword     cFunction     GetPlayerFacingAngle
 syn keyword     cFunction     IsPlayerInRangeOfPoint
-syn keyword     cFunction     Float:GetPlayerDistanceFromPoint
+syn keyword     cFunction     GetPlayerDistanceFromPoint
 syn keyword     cFunction     IsPlayerStreamedIn
 syn keyword     cFunction     SetPlayerInterior
 syn keyword     cFunction     GetPlayerInterior
@@ -340,7 +337,7 @@ syn keyword     cFunction     SetPlayerAttachedObject
 syn keyword     cFunction     RemovePlayerAttachedObject
 syn keyword     cFunction     IsPlayerAttachedObjectSlotUsed
 syn keyword     cFunction     EditAttachedObject
-syn keyword     cFunction     PlayerText:CreatePlayerTextDraw
+syn keyword     cFunction     CreatePlayerTextDraw
 syn keyword     cFunction     PlayerTextDrawDestroy
 syn keyword     cFunction     PlayerTextDrawLetterSize
 syn keyword     cFunction     PlayerTextDrawTextSize
@@ -365,7 +362,7 @@ syn keyword     cFunction     GetPVarInt
 syn keyword     cFunction     SetPVarString
 syn keyword     cFunction     GetPVarString
 syn keyword     cFunction     SetPVarFloat
-syn keyword     cFunction     Float:GetPVarFloat
+syn keyword     cFunction     GetPVarFloat
 syn keyword     cFunction     DeletePVar
 syn keyword     cFunction     GetPVarsUpperIndex
 syn keyword     cFunction     GetPVarNameAtIndex
@@ -405,8 +402,8 @@ syn keyword     cFunction     GetPlayerCameraTargetObject
 syn keyword     cFunction     GetPlayerCameraTargetVehicle
 syn keyword     cFunction     GetPlayerCameraTargetPlayer
 syn keyword     cFunction     GetPlayerCameraTargetActor
-syn keyword     cFunction     Float:GetPlayerCameraAspectRatio
-syn keyword     cFunction     Float:GetPlayerCameraZoom
+syn keyword     cFunction     GetPlayerCameraAspectRatio
+syn keyword     cFunction     GetPlayerCameraZoom
 syn keyword     cFunction     AttachCameraToObject
 syn keyword     cFunction     AttachCameraToPlayerObject
 syn keyword     cFunction     InterpolateCameraPos
@@ -446,11 +443,11 @@ syn keyword     cFunction     GetTickCount
 syn keyword     cFunction     GetMaxPlayers
 syn keyword     cFunction     CallRemoteFunction
 syn keyword     cFunction     CallLocalFunction
-syn keyword     cFunction     Float:VectorSize
-syn keyword     cFunction     Float:asin
-syn keyword     cFunction     Float:acos
-syn keyword     cFunction     Float:atan
-syn keyword     cFunction     Float:atan2
+syn keyword     cFunction     VectorSize
+syn keyword     cFunction     asin
+syn keyword     cFunction     acos
+syn keyword     cFunction     atan
+syn keyword     cFunction     atan2
 syn keyword     cFunction     GetPlayerPoolSize
 syn keyword     cFunction     GetVehiclePoolSize
 syn keyword     cFunction     GetActorPoolSize
@@ -460,7 +457,7 @@ syn keyword     cFunction     GetSVarInt
 syn keyword     cFunction     SetSVarString
 syn keyword     cFunction     GetSVarString
 syn keyword     cFunction     SetSVarFloat
-syn keyword     cFunction     Float:GetSVarFloat
+syn keyword     cFunction     GetSVarFloat
 syn keyword     cFunction     DeleteSVar
 syn keyword     cFunction     GetSVarsUpperIndex
 syn keyword     cFunction     GetSVarNameAtIndex
@@ -519,10 +516,10 @@ syn keyword     cFunction     NetStats_BytesReceived
 syn keyword     cFunction     NetStats_MessagesSent
 syn keyword     cFunction     NetStats_BytesSent
 syn keyword     cFunction     NetStats_MessagesRecvPerSecond
-syn keyword     cFunction     Float:NetStats_PacketLossPercent
+syn keyword     cFunction     NetStats_PacketLossPercent
 syn keyword     cFunction     NetStats_ConnectionStatus
 syn keyword     cFunction     NetStats_GetIpPort
-syn keyword     cFunction     Menu:CreateMenu
+syn keyword     cFunction     CreateMenu
 syn keyword     cFunction     DestroyMenu
 syn keyword     cFunction     AddMenuItem
 syn keyword     cFunction     SetMenuColumnHeader
@@ -531,8 +528,8 @@ syn keyword     cFunction     HideMenuForPlayer
 syn keyword     cFunction     IsValidMenu
 syn keyword     cFunction     DisableMenu
 syn keyword     cFunction     DisableMenuRow
-syn keyword     cFunction     Menu:GetPlayerMenu
-syn keyword     cFunction     Text:TextDrawCreate
+syn keyword     cFunction     GetPlayerMenu
+syn keyword     cFunction     TextDrawCreate
 syn keyword     cFunction     TextDrawDestroy
 syn keyword     cFunction     TextDrawLetterSize
 syn keyword     cFunction     TextDrawTextSize
@@ -564,18 +561,18 @@ syn keyword     cFunction     GangZoneFlashForPlayer
 syn keyword     cFunction     GangZoneFlashForAll
 syn keyword     cFunction     GangZoneStopFlashForPlayer
 syn keyword     cFunction     GangZoneStopFlashForAll
-syn keyword     cFunction     Text3D:Create3DTextLabel
+syn keyword     cFunction     Create3DTextLabel
 syn keyword     cFunction     Delete3DTextLabel
 syn keyword     cFunction     Attach3DTextLabelToPlayer
 syn keyword     cFunction     Attach3DTextLabelToVehicle
 syn keyword     cFunction     Update3DTextLabelText
-syn keyword     cFunction     PlayerText3D:CreatePlayer3DTextLabel
+syn keyword     cFunction     CreatePlayer3DTextLabel
 syn keyword     cFunction     DeletePlayer3DTextLabel
 syn keyword     cFunction     UpdatePlayer3DTextLabelText
 syn keyword     cFunction     ShowPlayerDialog
-syn keyword     cFunction     DB:db_open
+syn keyword     cFunction     db_open
 syn keyword     cFunction     db_close
-syn keyword     cFunction     DBResult:db_query
+syn keyword     cFunction     db_query
 syn keyword     cFunction     db_free_result
 syn keyword     cFunction     db_num_rows
 syn keyword     cFunction     db_next_row
@@ -583,10 +580,10 @@ syn keyword     cFunction     db_num_fields
 syn keyword     cFunction     db_field_name
 syn keyword     cFunction     db_get_field
 syn keyword     cFunction     db_get_field_int
-syn keyword     cFunction     Float:db_get_field_float
+syn keyword     cFunction     db_get_field_float
 syn keyword     cFunction     db_get_field_assoc
 syn keyword     cFunction     db_get_field_assoc_int
-syn keyword     cFunction     Float:db_get_field_assoc_float
+syn keyword     cFunction     db_get_field_assoc_float
 syn keyword     cFunction     db_get_mem_handle
 syn keyword     cFunction     db_get_result_mem_handle
 syn keyword     cFunction     db_debug_openfiles
@@ -598,7 +595,7 @@ syn keyword     cFunction     GetVehiclePos
 syn keyword     cFunction     SetVehiclePos
 syn keyword     cFunction     GetVehicleZAngle
 syn keyword     cFunction     GetVehicleRotationQuat
-syn keyword     cFunction     Float:GetVehicleDistanceFromPoint
+syn keyword     cFunction     GetVehicleDistanceFromPoint
 syn keyword     cFunction     SetVehicleZAngle
 syn keyword     cFunction     SetVehicleParamsForPlayer
 syn keyword     cFunction     ManualVehicleEngineAndLights
@@ -653,54 +650,56 @@ syn keyword     cFunction     existproperty
 syn keyword     cFunction     sendstring
 syn keyword     cFunction     sendpacket
 syn keyword     cFunction     listenport
-syn keyword     cFunction     File:fopen
-syn keyword     cFunction     bool:fclose
-syn keyword     cFunction     File:ftemp
-syn keyword     cFunction     bool:fremove
+syn keyword     cFunction     fopen
+syn keyword     cFunction     fclose
+syn keyword     cFunction     ftemp
+syn keyword     cFunction     fremove
 syn keyword     cFunction     fwrite
 syn keyword     cFunction     fread
-syn keyword     cFunction     bool:fputchar
+syn keyword     cFunction     fputchar
 syn keyword     cFunction     fgetchar
 syn keyword     cFunction     fblockwrite
 syn keyword     cFunction     fblockread
 syn keyword     cFunction     fseek
 syn keyword     cFunction     flength
 syn keyword     cFunction     fexist
-syn keyword     cFunction     bool:fmatch
-syn keyword     cFunction     Float:float
-syn keyword     cFunction     Float:floatstr
-syn keyword     cFunction     Float:floatmul
-syn keyword     cFunction     Float:floatdiv
-syn keyword     cFunction     Float:floatadd
-syn keyword     cFunction     Float:floatsub
-syn keyword     cFunction     Float:floatfract
+syn keyword     cFunction     fmatch
+syn keyword     cFunction     float
+syn keyword     cFunction     floatstr
+syn keyword     cFunction     floatmul
+syn keyword     cFunction     floatdiv
+syn keyword     cFunction     floatadd
+syn keyword     cFunction     floatsub
+syn keyword     cFunction     floatfract
 syn keyword     cFunction     floatround
 syn keyword     cFunction     floatcmp
-syn keyword     cFunction     Float:floatsqroot
-syn keyword     cFunction     Float:floatpower
-syn keyword     cFunction     Float:floatlog
-syn keyword     cFunction     Float:floatsin
-syn keyword     cFunction     Float:floatcos
-syn keyword     cFunction     Float:floattan
-syn keyword     cFunction     Float:floatabs
+syn keyword     cFunction     floatsqroot
+syn keyword     cFunction     floatpower
+syn keyword     cFunction     floatlog
+syn keyword     cFunction     floatsin
+syn keyword     cFunction     floatcos
+syn keyword     cFunction     floattan
+syn keyword     cFunction     floatabs
 syn keyword     cFunction     strlen
 syn keyword     cFunction     strpack
 syn keyword     cFunction     strunpack
 syn keyword     cFunction     strcat
 syn keyword     cFunction     strmid
-syn keyword     cFunction     bool: strins
-syn keyword     cFunction     bool: strdel
 syn keyword     cFunction     strcmp
 syn keyword     cFunction     strfind
 syn keyword     cFunction     strval
 syn keyword     cFunction     valstr
-syn keyword     cFunction     bool: ispacked
 syn keyword     cFunction     uudecode
 syn keyword     cFunction     uuencode
 syn keyword     cFunction     memcpy
 syn keyword     cFunction     gettime
 syn keyword     cFunction     getdate
 syn keyword     cFunction     tickcount
+
+
+" version.inc
+syn keyword	cConstant	SOURCEMOD_V_TAG SOURCEMOD_V_REV SOURCEMOD_V_CSET SOURCEMOD_V_MAJOR
+syn keyword	cConstant	SOURCEMOD_V_MINOR SOURCEMOD_V_RELEASE SOURCEMOD_VERSION
 
 syn keyword     cConstant     HTTP_GET
 syn keyword     cConstant     HTTP_POST
@@ -1026,12 +1025,7 @@ syn keyword     cConstant     VEHICLE_MODEL_INFO_WHEELSMID
 syn keyword     cConstant     VEHICLE_MODEL_INFO_FRONT_BUMPER_Z
 syn keyword     cConstant     VEHICLE_MODEL_INFO_REAR_BUMPER_Z
 
-
-" version_auto.inc
-syn keyword	cConstant	SOURCEMOD_V_TAG SOURCEMOD_V_REV SOURCEMOD_V_CSET SOURCEMOD_V_MAJOR
-syn keyword	cConstant	SOURCEMOD_V_MINOR SOURCEMOD_V_RELEASE SOURCEMOD_VERSION
-
-
+" Forwards
 syn keyword     cForward     OnNPCModeInit
 syn keyword     cForward     OnNPCModeExit
 syn keyword     cForward     OnNPCConnect
@@ -1103,11 +1097,6 @@ syn keyword     cForward     OnVehicleSirenStateChange
 syn keyword     cForward     OnPlayerClickPlayer
 syn keyword     cForward     OnPlayerSelectObject
 syn keyword     cForward     OnPlayerWeaponShot
-syn keyword     cForward     @receivestring
-syn keyword     cForward     @receivepacket
-syn keyword     cForward     operator%
-syn keyword     cForward     operator%
-syn keyword     cForward     operator%
 
 
 
